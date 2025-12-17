@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #111;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sidebar li:hover {
+    background: #333;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* PAGES */
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* FORM */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* FILM CARDS */
+#filmList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.film-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

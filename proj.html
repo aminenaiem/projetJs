@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CineTech Dashboard</title>
+    <link rel="stylesheet" href="proj.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>CineTech</h2>
+        <nav>
+            <ul>
+                <li class="nav-link" data-page="dashboard">Dashboard</li>
+                <li class="nav-link" data-page="films">Films</li>
+                <li class="nav-link" data-page="realisateurs">Réalisateurs</li>
+                <li class="nav-link" data-page="stats">Statistiques</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <h1>Smart Backoffice - CineTech</h1>
+        </header>
+
+        <!-- PAGES -->
+        <section id="dashboard" class="page active">
+            <h2>Dashboard</h2>
+            <p>Bienvenue dans CineTech.</p>
+        </section>
+
+        <section id="films" class="page">
+            <h2>Gestion des Films</h2>
+
+            <!-- FORMULAIRE -->
+            <form id="filmForm">
+                <input type="text" id="title" placeholder="Titre" required>
+                <input type="number" id="year" placeholder="Année" required>
+                <input type="text" id="genre" placeholder="Genre" required>
+                <input type="number" id="rating" placeholder="Note /10" required>
+                <button type="submit">Ajouter</button>
+            </form>
+
+            <!-- LISTE -->
+            <div id="filmList"></div>
+        </section>
+
+        <section id="realisateurs" class="page">
+            <h2>Gestion des Réalisateurs</h2>
+            <p>Module 2 (à compléter semaine 2).</p>
+        </section>
+
+        <section id="stats" class="page">
+            <h2>Statistiques & API</h2>
+            <p>Dashboard analytique (semaine 3).</p>
+        </section>
+
+    </main>
+
+    <script src="proj.js"></script>
+</body>
+</html>
