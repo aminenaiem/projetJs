@@ -1712,3 +1712,78 @@ tbody td {
 /* ======================================================================
    FIN DU STYLE CINEtech V2
    ====================================================================== */
+/* =========================================================
+   EXTENSION SEMAINE 2 — CRUD COMPLET FILMS + REALISATEURS
+   ========================================================= */
+
+/* Actions sur les films (modifier / supprimer) */
+.film-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.film-actions button {
+    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Bouton modifier */
+.btn-edit {
+    background: linear-gradient(135deg, #facc15, #f97316);
+    color: #111827;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.5);
+}
+.btn-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(250, 204, 21, 0.7);
+}
+
+/* Bouton supprimer */
+.btn-delete {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+}
+.btn-delete:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(239, 68, 68, 0.7);
+}
+
+/* Cartes Réalisateurs */
+.realisateur-card {
+    background: radial-gradient(circle at top, #111827, #020617 70%);
+    border: 1px solid rgba(79,70,229,0.7);
+    border-radius: 18px;
+    padding: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.realisateur-card:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,1), 0 0 20px rgba(79,70,229,0.8);
+}
+
+/* Actions Réalisateurs */
+.realisateur-actions {
+    margin-top: 8px;
+}
+.realisateur-actions button {
+    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(239,68,68,0.5);
+}
+.realisateur-actions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(239,68,68,0.7);
+}
